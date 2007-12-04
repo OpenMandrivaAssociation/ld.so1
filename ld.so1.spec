@@ -1,5 +1,5 @@
 %define version 1.9.11
-%define release 10mdk
+%define release  %mkrel 10
 %define debrelease 9
 %define url ftp://ftp.debian.org/debian/dists/woody/main/source/base
 %define fname ld.so
