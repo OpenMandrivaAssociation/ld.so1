@@ -4,7 +4,7 @@
 %define url ftp://ftp.debian.org/debian/dists/woody/main/source/base
 %define fname ld.so
 
-Summary: The Linux dynamic linker, library and utilities.
+Summary: The Linux dynamic linker, library and utilities
 Name: ld.so1
 Version: %{version}
 Release: %{release}
