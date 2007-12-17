@@ -18,7 +18,6 @@ Patch4: %{fname}-1.9.11-norun.patch.bz2
 Patch5: %{fname}-1.9.11-zeropreload.patch.bz2
 Patch6: %{fname}-1.9.11-ld.patch.bz2
 BuildRequires: egcs egcs-cpp
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 The dynamic linker provides the user-level support for loading and
