@@ -53,9 +53,13 @@ PREFIX=%buildroot sh instldso.sh --force
 #rm -f %buildroot/lib/*libdl*
 mv %buildroot%_bindir/ldd %buildroot%_bindir/ldd-libc5
 
+%if %mdkversion < 200900
 %post -p /sbin/ldconfig
+%endif
 
+%if %mdkversion < 200900
 %postun -p /sbin/ldconfig
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
