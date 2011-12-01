@@ -46,7 +46,7 @@ perl -pi -e 's/ldd/ldd-libc5/' man/ldd.1
 
 %install
 rm -rf %buildroot
-mkdir -p $RPM_BUILD_ROOT%_mandir/man1
+mkdir -p %{buildroot}%_mandir/man1
 install -m 644 man/ldd.1 %buildroot%_mandir/man1/ldd-libc5.1
 
 PREFIX=%buildroot sh instldso.sh --force 
@@ -62,7 +62,7 @@ mv %buildroot%_bindir/ldd %buildroot%_bindir/ldd-libc5
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
